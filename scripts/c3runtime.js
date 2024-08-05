@@ -4608,7 +4608,6 @@ self.C3_JsPropNameTable = [
 	{Спрайт5: 0},
 	{Спрайт6: 0},
 	{Спрайт7: 0},
-	{ЛокальноеХранилище: 0},
 	{ТайловыйФон3: 0},
 	{Текст3: 0},
 	{Спрайт8: 0},
@@ -4616,8 +4615,12 @@ self.C3_JsPropNameTable = [
 	{Спрайт9: 0},
 	{Текст5: 0},
 	{Спрайт10: 0},
+	{Спрайт11: 0},
+	{Текст6: 0},
+	{ЛокальноеХранилище: 0},
 	{количествоМонет: 0},
-	{купитьАнгела: 0}
+	{купитьАнгела: 0},
+	{скин2: 0}
 ];
 
 self.InstanceType = {
@@ -4636,14 +4639,16 @@ self.InstanceType = {
 	Спрайт5: class extends self.ISpriteInstance {},
 	Спрайт6: class extends self.ISpriteInstance {},
 	Спрайт7: class extends self.ISpriteInstance {},
-	ЛокальноеХранилище: class extends self.IInstance {},
 	ТайловыйФон3: class extends self.ITiledBackgroundInstance {},
 	Текст3: class extends self.ITextInstance {},
 	Спрайт8: class extends self.ISpriteInstance {},
 	Текст4: class extends self.ITextInstance {},
 	Спрайт9: class extends self.ISpriteInstance {},
 	Текст5: class extends self.ITextInstance {},
-	Спрайт10: class extends self.ISpriteInstance {}
+	Спрайт10: class extends self.ISpriteInstance {},
+	Спрайт11: class extends self.ISpriteInstance {},
+	Текст6: class extends self.ITextInstance {},
+	ЛокальноеХранилище: class extends self.IInstance {}
 }
 }
 
@@ -4759,7 +4764,9 @@ self.C3_ExpressionFuncs = [
 		() => 157.487977,
 		() => 307.405131,
 		() => 2,
-		() => 1000
+		() => 5,
+		() => 1000,
+		() => 10000
 ];
 
 
