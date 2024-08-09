@@ -4575,7 +4575,6 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Mouse.Cnds.OnObjectClicked,
 		C3.Plugins.Sprite.Acts.SetAnim,
 		C3.Plugins.System.Acts.AddVar,
-		C3.Plugins.Mouse.Cnds.OnWheel,
 		C3.Plugins.Audio.Acts.PlayAtPositionByName,
 		C3.Plugins.Keyboard.Cnds.OnKey,
 		C3.Plugins.System.Acts.SaveState,
@@ -4618,9 +4617,15 @@ self.C3_JsPropNameTable = [
 	{Спрайт11: 0},
 	{Текст6: 0},
 	{ЛокальноеХранилище: 0},
+	{Спрайт12: 0},
+	{Текст7: 0},
+	{Спрайт13: 0},
+	{Текст8: 0},
 	{количествоМонет: 0},
 	{купитьАнгела: 0},
-	{скин2: 0}
+	{скин2: 0},
+	{скин3: 0},
+	{скин4: 0}
 ];
 
 self.InstanceType = {
@@ -4648,7 +4653,11 @@ self.InstanceType = {
 	Спрайт10: class extends self.ISpriteInstance {},
 	Спрайт11: class extends self.ISpriteInstance {},
 	Текст6: class extends self.ITextInstance {},
-	ЛокальноеХранилище: class extends self.IInstance {}
+	ЛокальноеХранилище: class extends self.IInstance {},
+	Спрайт12: class extends self.ISpriteInstance {},
+	Текст7: class extends self.ITextInstance {},
+	Спрайт13: class extends self.ISpriteInstance {},
+	Текст8: class extends self.ITextInstance {}
 }
 }
 
@@ -4765,8 +4774,12 @@ self.C3_ExpressionFuncs = [
 		() => 307.405131,
 		() => 2,
 		() => 5,
+		() => 20,
+		() => "количествоМонет",
 		() => 1000,
-		() => 10000
+		() => 10000,
+		() => 25000,
+		() => 50000
 ];
 
 
